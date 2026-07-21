@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Godrej_Static_Account_Id_For_PDF_Use</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Godrej_Static_Account_Id_For_PDF_Use</shortDescription>
+        <value>001dL00002J2AfJQAV</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,67 @@
+<template>
+    <lightning-card title="Quote PDF">
+
+        <template if:true={showDataTable}>
+            <lightning-datatable
+                key-field="Id"
+                data={quoteLines}
+                columns={columns}
+                onrowselection={handleRowSelection}>
+            </lightning-datatable>
+        </template>
+
+        <template if:true={showPreview}>
+            <div class="slds-p-around_medium">
+                <iframe
+                    src={vfUrl}
+                    width="100%"
+                    height="380px"
+                    frameborder="0">
+                </iframe>
+            </div>
+        </template>
+
+        <template if:true={error}>
+            <div class="slds-p-around_medium slds-text-color_error">
+                {error}
+            </div>
+        </template>
+
+        <div class="slds-p-around_medium slds-align_absolute-center">
+
+            <lightning-button
+                label="Cancel"
+                onclick={handleCancel}>
+            </lightning-button>
+
+            <template if:false={showPreview}>
+                <lightning-button
+                    class="slds-m-left_small"
+                    label="Preview"
+                    variant="brand"
+                    disabled={isSelectionEmpty}
+                    onclick={handlePreview}>
+                </lightning-button>
+            </template>
+
+            <template if:true={showPreview}>
+                <lightning-button
+                    class="slds-m-left_small"
+                    label="Back"
+                    onclick={handleBack}>
+                </lightning-button>
+            </template>
+
+            <lightning-button
+    class="slds-m-left_small"
+    label="Download"
+    icon-name="utility:download"
+    variant="brand"
+    disabled={isGenerating}
+    onclick={handleDownload}>
+</lightning-button>
+
+        </div>
+
+    </lightning-card>
+</template>
