@@ -1,7 +1,14 @@
+/**
+ * @description       : 
+ * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @group             : 
+ * @last modified on  : 07-21-2026
+ * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+**/
 public class FilteredSections {
 
     public static List<Section__c> getsectionRecords(Id quoteTemplateId, Id quoteId, User u){
-
+    //filteredsections
         return [SELECT
     Id,
     Name,
