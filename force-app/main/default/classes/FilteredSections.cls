@@ -8,7 +8,7 @@
 public class FilteredSections {
 
     public static List<Section__c> getsectionRecords(Id quoteTemplateId, Id quoteId, User u){
-    //filteredsection
+    //filteredsections
         return [SELECT
     Id,
     Name,

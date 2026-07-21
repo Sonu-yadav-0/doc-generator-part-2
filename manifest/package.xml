@@ -12,6 +12,8 @@
 	</types>
 	<types>
 		<members>Account.Account_Email__c</members>
+		<members>Account.Terms_and_Conditions__c</members>
+		<members>Account.Contact__c</members>
 		<members>Account.Footer_Logo__c</members>
 		<members>Account.Footer_Width__c</members>
 		<members>Account.Header_Address_Left_Spacing__c</members>
@@ -50,6 +52,12 @@
 		<members>Section_Table__c</members>
 		<members>Section__c</members>
 		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Quote_Template__c</members>
+		<members>Section_Table__c</members>
+		<members>Section__c</members>
+		<name>CustomTab</name>
 	</types>
 	<types>
 		<members>Section_Record_Page</members>
